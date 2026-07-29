@@ -55,3 +55,5 @@ A visitor opens the app's URL and immediately sees the current date and
 time, which continues to tick forward automatically while the page remains
 open, with no sign-in step and no visible network calls to any backend or
 third-party API.
+
+<!-- e2e v3 bump -->
