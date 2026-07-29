@@ -57,3 +57,6 @@ open, with no sign-in step and no visible network calls to any backend or
 third-party API.
 
 <!-- e2e v3 bump -->
+
+
+<!-- e2e v4 openbao-direct bump -->
