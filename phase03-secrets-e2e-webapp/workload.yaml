@@ -1,0 +1,10 @@
+apiVersion: openchoreo.dev/v1alpha1
+metadata:
+  name: phase03-secrets-e2e-webapp
+
+endpoints:
+  - name: http
+    type: HTTP
+    port: 9090
+    visibility:
+      - external
