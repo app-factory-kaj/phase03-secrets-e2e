@@ -52,9 +52,9 @@ resource. It is reached directly by visitors through the internet gateway
 1. A visitor navigates to the app's URL.
 2. The browser loads the single static page and its JS bundle.
 3. On load, the page reads the browser's local `Date` and renders the
- current date and time.
+current date and time.
 4. A client-side timer re-reads the local `Date` at least once per second
- and re-renders the display, so the date/time keeps ticking forward while
- the page remains open.
+and re-renders the display, so the date/time keeps ticking forward while
+the page remains open.
 5. No requests are made to any backend or external service at any point in
- this flow.
+this flow.
