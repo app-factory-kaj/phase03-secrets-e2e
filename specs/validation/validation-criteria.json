@@ -1,0 +1,55 @@
+{
+  "requirements": [
+    {
+      "id": "REQ-001",
+      "statement": "The app displays a single web page showing the current date and time.",
+      "criteria": [
+        { "id": "AC-001-a", "must": "Loading the app's URL renders a single page.", "method": "e2e" },
+        { "id": "AC-001-b", "must": "The rendered page shows the current date.", "method": "e2e" },
+        { "id": "AC-001-c", "must": "The rendered page shows the current time.", "method": "e2e" }
+      ]
+    },
+    {
+      "id": "REQ-002",
+      "statement": "The displayed date and time update automatically (live) without requiring a manual page refresh.",
+      "criteria": [
+        { "id": "AC-002-a", "must": "The displayed time value changes on its own within a few seconds of the page remaining open, with no user action.", "method": "e2e" }
+      ]
+    },
+    {
+      "id": "REQ-003",
+      "statement": "The date and time reflect the visitor's own browser/device clock and locale/timezone, with no server-side time source.",
+      "criteria": [
+        { "id": "AC-003-a", "must": "The displayed date and time are derived from the visitor's local browser clock rather than a value fetched from a backend.", "method": "e2e" }
+      ]
+    },
+    {
+      "id": "REQ-004",
+      "statement": "The app makes no calls to any backend or third-party API.",
+      "criteria": [
+        { "id": "AC-004-a", "must": "No network requests to a backend service or third-party API are made while the page is loaded and running.", "method": "e2e" }
+      ]
+    },
+    {
+      "id": "REQ-005",
+      "statement": "The page is viewable by any visitor without signing in or authenticating.",
+      "criteria": [
+        { "id": "AC-005-a", "must": "The page and its date/time display are accessible without any login or authentication step.", "method": "e2e" }
+      ]
+    },
+    {
+      "id": "REQ-006",
+      "statement": "The app has no persistence: nothing is stored across visits or reloads.",
+      "criteria": [
+        { "id": "AC-006-a", "must": "No visit history, preferences, or other data are stored or retrievable across page reloads.", "method": "manual" }
+      ]
+    },
+    {
+      "id": "REQ-007",
+      "statement": "The application is a single-page app with a single view and no additional routes.",
+      "criteria": [
+        { "id": "AC-007-a", "must": "The app exposes exactly one view/route; there is no navigation to additional pages.", "method": "manual" }
+      ]
+    }
+  ]
+}

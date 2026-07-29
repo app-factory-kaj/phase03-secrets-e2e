@@ -1,0 +1,13 @@
+{
+  "name": "phase03-secrets-e2e-webapp",
+  "type": "web-application",
+  "version": "0.1.0",
+  "language": "TypeScript",
+  "buildpack": "docker",
+  "appPath": "phase03-secrets-e2e-webapp",
+  "entrypoint": "deployment/web-application",
+  "exposure": "internet",
+  "dependencies": [],
+  "description": "Single-page React app that displays the current date and time, updating at least once per second from the visitor's own browser clock. It is the entire system: no backend service, no database, no authentication, and no calls to any external or third-party API. It reads no configuration beyond static defaults and stores no data.",
+  "skillsApplied": ["excalidraw-wireframes", "react-webapp"]
+}

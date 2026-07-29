@@ -1,0 +1,5 @@
+title phase03-secrets-e2e
+
+component phase03-secrets-e2e-webapp as "Hello Clock" web-application
+
+north -> phase03-secrets-e2e-webapp
